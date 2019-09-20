@@ -1,0 +1,818 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* LANDING PAGE 1 */  
+
+.kontakt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    animation: fadeUp 1.2s ease-out 0.5s forwards;
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+} 
+
+@keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 1rem, 0); }
+    75% {
+      opacity: 0.75;
+      transform: translate3d(0, 0, 0); }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0); } }
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    font-size: 40px;
+    z-index: 10;
+    font-weight: 300;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000000;
+    opacity: 1;
+    transition: 0.5s;
+    font-weight: 300;
+}
+
+.logo a:hover {
+    color: #9d9c9c;
+}
+
+.über-uns {
+    position: absolute;
+    left: 55px;
+    bottom: 35px;
+    font-size: 25px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.über-uns a {
+    text-decoration: none;
+    color: #000000;
+    cursor: none;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.über-uns a:hover:after {
+    width:100%;
+    right: 0;
+}
+  
+.über-uns a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px;
+    content: "";
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: #000000;
+    transition: width 0.5s ease 0s, right 0.1s ease 0s;
+    width: 0;
+}
+
+.projekte {
+    position: absolute;
+    right: 70px;
+    bottom: 35px;
+    font-size: 25px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.projekte a {
+    text-decoration: none;
+    color: #000000;
+    cursor: none;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.projekte a:hover:after {
+    width:100%;
+    right: 0;
+}
+  
+.projekte a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px;
+    content: "";
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: #000000;
+    transition: width 0.5s ease 0s, right 0.1s ease 0s;
+    width: 0;
+}
+
+.kontakt-left {
+    position: relative;
+    animation: fadeUp 1.2s ease-out 1.2s forwards;
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+}
+
+.kontakt-left p {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 40%;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.kontakt-right {
+    position: relative;
+    background: #ababab;
+    animation: fadeUp 1.2s ease-out 1.2s forwards;
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+}
+
+.contacts {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    left: 10%;
+}
+
+.email, .telefon, .follow {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.contacts label {
+    font-size: 15px;
+}
+
+
+.follow li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.follow a {
+    color: #000000;
+    text-decoration: none;
+    transition: border-bottom 0.8s;
+    border-bottom: 1.5px solid #ababab;
+    float: left;
+    display: block;
+    margin-right: 50px;
+}
+
+
+.follow a:hover {
+    border-bottom: 1.5px solid #000000;
+}
+
+
+/*FOOTER SECTION*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-gap: 80px;
+    max-width: 100%;
+    justify-content: center;
+    background: #f2f2f2;
+}
+
+.footer-impressum {
+    height: 220px;
+    margin-left: 40px;
+}
+
+.footer-impressum h5, .footer-socialmedia h5 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.footer-impressum ul {
+    font-size: 15px;
+    color: #9d9c9c;
+}
+
+.footer-impressum h6 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #9d9c9c;
+    margin-top: 35px;
+}
+
+.footer-socialmedia {
+    height: 220px;
+    margin-left: 40px;
+}
+
+.footer-socialmedia a {
+    text-decoration: none;
+}
+
+.footer-socialmedia ul {
+    margin-top: 50px;
+}
+
+.footer-socialmedia li{
+    display: inline;
+    font-size: 15px;
+    margin-right: 40px;
+    color: #9d9c9c;
+    transition: 0.5s;
+}
+
+.footer-socialmedia li:hover {
+    color: #000000;
+}
+
+
+@media (min-width:320px) {
+
+
+    .über-uns {
+        left: 2%;
+        font-size: 20px;
+        bottom: 90px;
+    }
+    
+    .projekte {
+        position: absolute;
+        right: 3%;
+        bottom: 90px;
+        font-size: 20px;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .kontakt {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        animation: fadeUp 1.2s ease-out 0.5s forwards;
+        opacity: 0;
+        transform: translate3d(0, 1rem, 0);
+    } 
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 10%;
+        font-size: 30px;
+        z-index: 10;
+        font-weight: 300;
+    }
+
+    .kontakt-left p {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 35%;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .contacts {
+        position: absolute;
+        top: 5%;
+        right: 2%;
+        left: 10%;
+    }
+
+    .email, .telefon, .follow {
+        position: relative;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .follow a {
+        color: #000000;
+        text-decoration: none;
+        transition: border-bottom 0.8s;
+        border-bottom: 1.5px solid #ababab;
+        float: left;
+        display: block;
+        margin-right: 35px;
+        font-size: 20px;
+    }
+
+
+/* FOOTER SECTION */
+
+.footer {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-gap: 1px;
+    max-width: 100%;
+    justify-content: center;
+    background: #f2f2f2;
+}
+
+.footer-impressum {
+    height: 140px;
+    margin-left: 20px;
+}
+
+.footer-impressum h5, .footer-socialmedia h5 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer-impressum ul {
+    font-size: 10px;
+    color: #9d9c9c;
+}
+
+.footer-impressum h6 {
+    font-size: 10px;
+    font-weight: 300;
+    color: #9d9c9c;
+    margin-top: 5px;
+}
+
+.footer-socialmedia {
+    height: 140px;
+    margin-left: 20px;
+    width: 100%;
+    top: 10%;
+}
+
+.footer-socialmedia ul {
+    margin-top: 15px;
+}
+
+.footer-socialmedia li{
+    display: inline;
+    font-size: 10px;
+    margin-right: 30px;
+    color: #9d9c9c;
+    transition: 0.5s;
+}
+
+.footer-socialmedia a {
+    text-decoration: none;
+}    
+
+}
+
+@media (min-width:480px) {
+
+}
+
+@media (min-width:641px) {
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 10%;
+        font-size: 40px;
+        z-index: 10;
+        font-weight: 300;
+    }
+
+    .kontakt {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        animation: fadeUp 1.2s ease-out 0.5s forwards;
+        opacity: 0;
+        transform: translate3d(0, 1rem, 0);
+    } 
+
+    .contacts {
+        top: 10%;
+    }
+
+    .email, .telefon, .follow {
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    .contacts label {
+        font-size: 15px;
+    }
+    
+    
+    .follow li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    .follow a {
+        color: #000000;
+        text-decoration: none;
+        transition: border-bottom 0.8s;
+        border-bottom: 1.5px solid #ababab;
+        float: left;
+        display: block;
+        margin-right: 50px;
+        font-size: 20px;
+    }
+
+    .kontakt-left {
+        margin-right: 30%;
+    }
+
+    .kontakt-left p {
+        font-size: 20px;
+    }
+
+
+    /* FOOTER SECTION */    
+
+    .footer {
+        display: grid;
+        grid-template-columns: 640px;
+        grid-gap: 1px;
+        max-width: 100%;
+        justify-content: center;
+        background: #f2f2f2;
+    }
+
+    .footer-impressum, .footer-socialmedia {
+        height: 120px;
+    }    
+
+}
+
+@media (min-width:961px) {
+
+    /* LANDING PAGE 1 */  
+
+    
+
+.kontakt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    animation: fadeUp 1.2s ease-out 0.5s forwards;
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+} 
+
+@keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 1rem, 0); }
+    75% {
+      opacity: 0.75;
+      transform: translate3d(0, 0, 0); }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0); } }
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    font-size: 40px;
+    z-index: 10;
+    font-weight: 300;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000000;
+    opacity: 1;
+    transition: 0.5s;
+    font-weight: 300;
+}
+
+.logo a:hover {
+    color: #9d9c9c;
+}
+
+.über-uns {
+    position: absolute;
+    left: 55px;
+    bottom: 35px;
+    font-size: 25px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.über-uns a {
+    text-decoration: none;
+    color: #000000;
+    cursor: none;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.über-uns a:hover:after {
+    width:100%;
+    right: 0;
+}
+  
+.über-uns a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px;
+    content: "";
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: #000000;
+    transition: width 0.5s ease 0s, right 0.1s ease 0s;
+    width: 0;
+}
+
+.projekte {
+    position: absolute;
+    right: 70px;
+    bottom: 35px;
+    font-size: 25px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.projekte a {
+    text-decoration: none;
+    color: #000000;
+    cursor: none;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.projekte a:hover:after {
+    width:100%;
+    right: 0;
+}
+  
+.projekte a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px;
+    content: "";
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: #000000;
+    transition: width 0.5s ease 0s, right 0.1s ease 0s;
+    width: 0;
+}
+
+.kontakt-left {
+    position: relative;
+    animation: fadeUp 1.2s ease-out 1.2s forwards;
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+    margin-right: 5px;
+
+}
+
+.kontakt-left p {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 40%;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.kontakt-right {
+    position: relative;
+    background: #ababab;
+    animation: fadeUp 1.2s ease-out 1.2s forwards;
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+}
+
+.contacts {
+    position: relative;
+    top: 35%;
+    right: 10%;
+    left: 10%;
+}
+
+.email, .telefon, .follow {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.contacts label {
+    font-size: 15px;
+}
+
+
+.follow li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.follow a {
+    color: #000000;
+    text-decoration: none;
+    transition: border-bottom 0.8s;
+    border-bottom: 1.5px solid #ababab;
+    float: left;
+    display: block;
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+
+.follow a:hover {
+    border-bottom: 1.5px solid #000000;
+}
+
+
+/*FOOTER SECTION*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-gap: 80px;
+    max-width: 100%;
+    justify-content: center;
+    background: #f2f2f2;
+}
+
+.footer-impressum {
+    height: 220px;
+    margin-left: 40px;
+}
+
+.footer-impressum h5, .footer-socialmedia h5 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.footer-impressum ul {
+    font-size: 15px;
+    color: #9d9c9c;
+}
+
+.footer-impressum h6 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #9d9c9c;
+    margin-top: 35px;
+}
+
+.footer-socialmedia {
+    height: 220px;
+    margin-left: 40px;
+}
+
+.footer-socialmedia a {
+    text-decoration: none;
+}
+
+.footer-socialmedia ul {
+    margin-top: 50px;
+}
+
+.footer-socialmedia li{
+    display: inline;
+    font-size: 15px;
+    margin-right: 40px;
+    color: #9d9c9c;
+    transition: 0.5s;
+}
+
+.footer-socialmedia li:hover {
+    color: #000000;
+}
+
+}
+
+@media (min-width:1024px) {
+
+        /* FOOTER SECTION */ 
+
+    .footer {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-gap: 10px;
+        max-width: 100%;
+        justify-content: center;
+        background: #f2f2f2;
+    }
+
+    .footer-impressum, .footer-socialmedia {
+        height: 170px;
+    }
+    
+    .footer-impressum h5 {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    
+    .footer-impressum ul {
+        margin-top: 20px;
+    }
+    
+    .footer-impressum h6 {
+         margin-top: 18px;
+    }
+    
+    .footer-socialmedia ul {
+        margin-top: 40px;
+    }
+    
+    .footer-socialmedia h5 {
+        margin-top: 15px;
+        font-size: 20px;
+    }     
+
+}
+
+@media (min-width:1281px) {
+
+    /* FOOTER SECTION */     
+
+    .footer {
+        display: grid;
+        grid-template-columns: 600px 600px;
+        grid-gap: 80px;
+        max-width: 100%;
+        justify-content: center;
+        background: #f2f2f2;
+    }
+    
+    .footer-impressum {
+        height: 220px;
+        margin-left: 40px;
+    }
+    
+    .footer-impressum h5, .footer-socialmedia h5 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-size: 25px;
+    }
+    
+    .footer-impressum ul {
+        font-size: 15px;
+        color: #9d9c9c;
+    }
+    
+    .footer-impressum h6 {
+        font-size: 15px;
+        font-weight: 300;
+        color: #9d9c9c;
+        margin-top: 35px;
+    }
+    
+    .footer-socialmedia {
+        height: 220px;
+        margin-left: 40px;
+    }
+    
+    .footer-socialmedia ul {
+        margin-top: 50px;
+    }
+    
+    .footer-socialmedia li{
+        display: inline;
+        font-size: 15px;
+        margin-right: 40px;
+        color: #9d9c9c;
+    }
+
+}
+
+
+
+
+
+
+
+
+
