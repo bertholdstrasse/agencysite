@@ -1,0 +1,1444 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    position: absolute;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 999;
+  }
+  .pointer{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #000000;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+    pointer-events: none;
+    overflow:hidden;
+    z-index: 999;
+  }
+
+
+.landing-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    font-weight: 300;
+    background: url('../img/paper-background.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    font-size: 40px;
+    z-index: 10;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000000;
+    cursor: none;
+    opacity: 1;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+}
+
+.logo a:hover {
+    opacity: 0.3;
+}
+
+
+
+
+.über-uns {
+    position: absolute;
+    left: 55px;
+    bottom: 35px;
+    font-size: 25px;
+    z-index: 10;
+}
+
+.über-uns a {
+    text-decoration: none;
+    color: #000000;
+    cursor: none;
+}
+
+.über-uns a:hover:after {
+    width:100%;
+    right: 0;
+  }
+  
+  .über-uns a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 18px;
+    content: "";
+    height: 5px;
+    right: 0;
+    position: absolute;
+    background: #000000;
+    transition: width 0.5s ease 0s, right 0.1s ease 0s;
+    width: 0;
+  }
+
+.projekte {
+    position: absolute;
+    right: 70px;
+    bottom: 35px;
+    font-size: 25px;
+    z-index: 10;
+}
+
+.projekte a {
+    text-decoration: none;
+    color: #000000;
+    cursor: none;
+}
+
+.projekte a:hover:after {
+    width:100%;
+    right: 0;
+  }
+  
+  .projekte a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px;
+    content: "";
+    height: 5px;
+    right: 0;
+    position: absolute;
+    background: #000000;
+    transition: width 0.5s ease 0s, right 0.1s ease 0s;
+    width: 0;
+  }
+
+
+
+#el1 {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    left: 10%;
+    top: 30%;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+#el1 img {
+    width: 100%;
+}
+
+#el2 {
+    position: absolute;
+    max-width: 100%;
+    top: 45%;
+    left: 10%;
+    right: 10%;
+    font-size: 5vw;
+    text-align: center;
+    z-index: 10;
+}
+
+#el2 h1 {
+    font-weight: 300;
+}
+
+#el3 {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 20%;
+    left: 4%;
+    opacity: 0.5;
+}
+
+#el3 img {
+    width: 100%;
+}
+
+#el4 {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 20%;
+    right: 4%;
+
+}
+
+#el4 img {
+    width: 100%;
+    opacity: 0.7;
+}
+
+#el5 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 5%;
+    right: 18%;
+    opacity: 0.7;
+}
+
+#el5 img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+.landing-page2 {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    font-weight: 300;
+    background: #f2f2f2;
+    overflow: hidden;
+}
+
+
+
+
+
+#logo {
+    position: relative;
+    font-size: 10vw;
+    margin-top: 70px;
+    margin-left: 40px;
+    z-index: 10;
+}
+
+#logo h1 {
+    font-weight: 300;
+}
+
+#beschreibung {
+    position: relative;
+    font-size: 3.8vw;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 50px;
+
+}
+
+
+  .header_nav_toggle {
+    color:#8ffcf8;
+    width: 12vw;
+      margin-top: 130px;
+      font-size: 2.0vw;
+      font-weight: 800;
+      letter-spacing: 3px;
+      position: relative;
+    margin-left: 40px;
+      padding: 30px 50px 30px 50px;
+      background: #d8a1f2;
+      z-index: 200;
+      -webkit-box-shadow: 10px 10px 0 0 #8ffcf8;
+      box-shadow: 10px 10px 0 0 #8ffcf8;
+      -webkit-transition: 0.25s;
+      transition: 0.25s;
+  }
+
+  .header_nav_toggle p {
+      text-align: center;
+  }
+
+  .header_nav_toggle:hover {
+    background: #90e6f9;
+    color:#d4a2f2;
+    -webkit-box-shadow: 5px 5px 0 0 #d8a1f2 !important;
+    box-shadow: 5px 5px 0 0 #d8a1f2 !important;
+  }
+
+  .header_nav_toggle a {
+    text-align: center;
+    text-decoration: none;
+    color:#8ffcf8;
+    cursor: none;
+  }
+
+  .header_nav_toggle:hover > a {
+    color:#d4a2f2;
+  }
+
+
+
+
+  .header_nav_toggle1 {
+    color:#8ffcf8;
+    width: 12vw;
+      margin-top: 30px;
+      font-size: 2.0vw;
+      font-weight: 800;
+      letter-spacing: 3px;
+      position: absolute;
+      bottom: 10%;
+    margin-left: 40px;
+      padding: 30px 50px 30px 50px;
+      background: #d8a1f2;
+      z-index: 200;
+      -webkit-box-shadow: 10px 10px 0 0 #8ffcf8;
+      box-shadow: 10px 10px 0 0 #8ffcf8;
+      -webkit-transition: 0.25s;
+      transition: 0.25s;
+  }
+
+  .header_nav_toggle1 p {
+    text-align: center;
+}
+
+  .header_nav_toggle1 a {
+    text-align: center;
+    text-decoration: none;
+    color:#8ffcf8;
+    cursor: none;
+  }
+
+  .header_nav_toggle1:hover > a {
+    color:#d4a2f2;
+  }
+
+  .header_nav_toggle1:hover {
+    background: #90e6f9;
+    color:#d4a2f2;
+    -webkit-box-shadow: 5px 5px 0 0 #d8a1f2 !important;
+    box-shadow: 5px 5px 0 0 #d8a1f2 !important;
+  }
+
+
+
+
+
+  .header_nav_toggle2  {
+    color:#8ffcf8;
+    width: 7vw;
+    margin-top: 40px;
+    right: 5%;
+    font-size: 1.1vw;
+    font-weight: 800;
+    letter-spacing: 3px;
+    position: fixed;
+    padding: 15px 25px 15px 25px;
+    background: #d8a1f2;
+    z-index: 200;
+    -webkit-box-shadow: 10px 10px 0 0 #8ffcf8;
+    box-shadow: 10px 10px 0 0 #8ffcf8;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+
+  .header_nav_toggle2 p {
+    text-align: center;
+}
+
+  .header_nav_toggle2 a {
+    text-align: center;
+    text-decoration: none;
+    color:#8ffcf8;
+    cursor: none;
+  }
+
+  .header_nav_toggle2:hover > a {
+    color:#d4a2f2;
+  }
+
+  .header_nav_toggle2:hover {
+    background: #90e6f9;
+    color:#d4a2f2;
+    -webkit-box-shadow: 5px 5px 0 0 #d8a1f2 !important;
+    box-shadow: 5px 5px 0 0 #d8a1f2 !important;
+  }
+
+
+
+
+
+
+
+  
+.landing-page3 {
+    position: relative;
+    height: 2000px;
+    width: 100%;
+    font-weight: 300;
+    background: #ffffff;
+    overflow: hidden;
+}  
+
+#beschreibung2 {
+    position: absolute;
+    font-size: 7vw;
+    font-weight: 400;
+    margin-top: 300px;
+    margin-left: 130px;
+    width: 60%;
+    z-index: 10;
+}
+
+.social {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 1.3vw;
+}
+
+.social a {
+    text-decoration: none;
+    color: #000000;
+    cursor: none;
+}
+
+.social li:hover > a {
+    opacity: 0.4;
+}
+  
+
+.social li {
+    margin: 20px;
+}
+
+#el6 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 50%;
+    right: 0%;
+}
+
+#el6 img {
+    width: 100%;
+}
+
+#el7 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 30%;
+    left: 0%;
+    opacity: 0.5;
+    z-index: 4;
+
+}
+
+#el7 img {
+    width: 100%;
+}
+
+#el8 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 20%;
+    left: 35%;
+    opacity: 0.7;
+}
+
+#el8 img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.kontakt-us {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 2vw; 
+}
+
+.kontakt-us h5{
+    font-weight: 300;
+}
+
+.kontaktdaten {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+    color: #9d9c9c;
+    font-size: 1vw;
+}
+
+.kontaktdaten li {
+    margin-top: 5px;
+}
+
+.projektanfrage {
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    font-size: 2vw;
+    margin-right: 40px;
+}
+
+.projektanfrage h5{
+    font-weight: 300;
+}
+
+.social-contacts {
+    position: absolute;
+    left: 50%;
+    top: 125px;
+    color: #9d9c9c;
+    font-size: 2vw;
+    list-style: none;
+
+}
+
+.social-contacts a {
+    text-decoration: none;
+    cursor: none;
+    color: #9d9c9c;
+}
+
+.social-contacts li {
+    display: inline;
+    margin-right: 10px;
+    font-weight: 200;
+}
+
+.copyright {
+    position: absolute;
+    margin-left: 40px;
+    bottom: 10%;
+    font-size: 1vw;
+    font-weight: 300;
+    color: #9d9c9c;
+}
+
+.impressum {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    color: #9d9c9c;
+    font-size: 1vw;
+    list-style: none;
+
+}
+
+.impressum a {
+    text-decoration: none;
+    cursor: none;
+    color: #9d9c9c;
+}
+
+.impressum li {
+    display: inline;
+    margin-right: 30px;
+    font-weight: 300;
+}
+
+.projektanfrage-mobile {
+    position: relative;
+    margin-left: 40px;
+    top: 45px;
+    font-size: 2vw;
+    margin-right: 40px;
+}
+
+.projektanfrage-mobile h5{
+    font-weight: 300;
+}
+
+
+
+
+
+@media (min-width:320px)  {
+
+    #el1 {
+        width: 130px;
+    }
+
+    #el2 {
+        font-size: 30px;
+        top: 40%;
+    }
+
+    .logo {
+        font-size: 25px;
+        top: 20px;
+        left: 4%;
+    }
+
+    #el3 {
+        width: 130px;
+        top: 40%;
+        left: 4%;
+    }
+
+    #el4 {
+        width: 130px;
+        top: 20%;
+        right: 4%;
+    }
+
+    #el5 {
+        width: 30vw;
+    }
+
+    .über-uns {
+        font-size: 20px;
+        left: 4%;
+        bottom: 20px;
+    }
+
+    .über-uns a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 37%;
+        content: "";
+        height: 5px;
+        right: 0;
+        position: absolute;
+        background: #000000;
+        transition: width 0.5s ease 0s, right 0.1s ease 0s;
+        width: 0;
+      }
+
+    .projekte {
+        font-size: 20px;
+        right: 4%;
+        bottom: 20px;
+    }
+
+    .projekte a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 37%;
+        content: "";
+        height: 5px;
+        right: 0;
+        position: absolute;
+        background: #000000;
+        transition: width 0.5s ease 0s, right 0.1s ease 0s;
+        width: 0;
+      }
+
+      .header_nav_toggle2 {
+          margin-top: 20px;
+      }
+
+
+
+
+
+      .landing-page2 {
+          height: auto;
+      }
+
+      #logo {
+          font-size: 38px;
+          margin-left: 4%;
+          margin-top: 40px;
+      }
+
+      #beschreibung {
+          font-size: 25px;
+          margin-top: 40px;
+          margin-left: 4%;
+          margin-right: 4%;
+      }
+
+      .header_nav_toggle {
+        display: none;
+      }
+      
+      .iphone-devices-kontakt {
+          position: relative;
+          font-size: 25px;
+          margin-top: 60px;
+          margin-left: 4%;
+          margin-bottom: 60px;
+          border-style: solid;
+          border-width: 3px;
+          display: table;
+          transition: 0.4s;
+      }
+
+      .iphone-devices-kontakt:hover {
+          border-color: #d4a2f2;
+      }
+
+      .iphone-devices-kontakt p:hover {
+        color: #d4a2f2;
+    }
+
+
+
+      .iphone-devices-kontakt a {
+          text-decoration: none;
+          color: #000000;
+      }
+
+      .iphone-devices-kontakt p {
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+      }
+
+
+
+
+
+      .landing-page3 {
+          height: 800px;
+      }
+
+
+      #beschreibung2 {
+        position: absolute;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 120px;
+        margin-left: 8%;
+        width: 60%;
+        z-index: 10;
+        }
+
+        .social {
+            z-index: 10;
+            font-size: 15px;
+        }
+
+        #el6 {
+            top: 20%;
+        }
+
+        #el7 {
+            top: 10%;
+        }
+
+        #el8 {
+            top: 50%;
+        }
+
+        #el6, #el7, #el8 {
+            width: 45%;
+        }
+
+        .iphone-devices-kontakt2 {
+            position: absolute;
+            font-size: 25px;
+            bottom: 10%;
+            left: 4%;
+            border-style: solid;
+            border-width: 3px;
+            display: table;
+        }
+
+        .iphone-devices-kontakt2:hover {
+            border-color: #d4a2f2;
+        }
+  
+        .iphone-devices-kontakt2 p:hover {
+          color: #d4a2f2;
+      }
+  
+        .iphone-devices-kontakt2 a {
+            text-decoration: none;
+            color: #000000;
+        }
+  
+        .iphone-devices-kontakt2 p {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px; 
+        }
+
+        .header_nav_toggle1 {
+            display: none;
+        }
+
+        .footer {
+            height: auto;
+        }
+
+        .projektanfrage-mobile {
+            position: relative;
+            font-size: 10px;
+            margin-left: 11px;
+            top: 10px;
+        }
+
+        .kontakt-us {
+            margin-left: 11px;
+            font-size: 10px;
+            margin-top: 25px;
+        }
+
+        .kontaktdaten {
+            position: relative;
+            font-size: 8px;
+            margin-top: 5px;  
+            margin-left: 11px;   
+           }
+
+        .kontaktdaten li {
+            margin-top: 1px;
+        }
+
+        .projektanfrage {
+            display: none;
+        }
+
+        .social-contacts {
+            position: relative;
+            left: 11px;
+            top: 15px;
+            color: #9d9c9c;
+            font-size: 25px;
+            list-style: none;
+        }
+        
+        .social-contacts a {
+            text-decoration: none;
+            cursor: none;
+            color: #9d9c9c;
+        }
+        
+        .social-contacts li {
+            margin-right: 40px;
+            font-weight: 200;
+        }
+
+        .copyright {
+            position: absolute;
+            margin-left: 11px;
+            margin-top: 20px;
+            bottom: 2%;
+            font-size: 8px;
+            font-weight: 300;
+            color: #9d9c9c;
+        }
+
+        .impressum {
+            position: relative;
+            left: 11px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: #9d9c9c;
+            font-size: 9px;
+            list-style: none;
+        
+        }
+        
+        .impressum a {
+            text-decoration: none;
+            cursor: none;
+            color: #9d9c9c;
+        }
+        
+        .impressum li {
+            display: block;
+            margin-top: 7px;
+            font-weight: 300;
+        }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:480px)  {
+
+    .logo {
+        font-size: 7vw;
+    }
+
+    #el3, #el4 {
+        width: 40vw;
+    }
+
+    .header_nav_toggle2 {
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (min-width:641px)  { 
+
+    .logo {
+        font-size: 5vw;
+    }
+
+    .header_nav_toggle2 {
+        margin-top: 20px;
+    }
+
+    #el1 {
+        width: 45vw;
+    }
+
+    #el2 {
+        font-size: 7vw;
+    }
+
+    .über-uns, .projekte {
+        font-size: 3.5vw;
+    }
+
+
+
+
+    #logo {
+        margin-top: 70px;
+        font-size: 80px;
+    }
+
+
+    #beschreibung {
+        margin-top: 50px;
+        font-size: 55px;
+    }
+
+    .iphone-devices-kontakt {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-size: 50px;
+    }
+
+
+
+
+    .landing-page3 {
+        height: 1300px;
+    }
+
+
+    #beschreibung2 {
+      position: absolute;
+      font-size: 60px;
+      font-weight: 400;
+      margin-top: 250px;
+      margin-left: 8%;
+      width: 60%;
+      z-index: 10;
+      }
+
+      .social {
+          z-index: 10;
+          font-size: 15px;
+      }
+
+      #el6 {
+          top: 20%;
+      }
+
+      #el7 {
+          top: 10%;
+      }
+
+      #el8 {
+        top: 50%;
+      }
+
+      #el6, #el7, #el8 {
+          width: 40%;
+      }
+
+      .iphone-devices-kontakt2 {
+          position: absolute;
+          font-size: 40px;
+          bottom: 5%;
+          left: 4%;
+          border-style: solid;
+          border-width: 3px;
+          display: table;
+      }
+
+      .iphone-devices-kontakt2 a {
+          text-decoration: none;
+          color: #000000;
+      }
+
+      .iphone-devices-kontakt2 p {
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 3px;
+          padding-bottom: 3px; 
+      }
+
+      .header_nav_toggle1 {
+          display: none;
+      }
+
+      .projektanfrage-mobile {
+          font-size: 20px;
+          margin-top: 20px;
+      }
+
+      .kontakt-us {
+          margin-top: 40px;
+          font-size: 20px;
+      }
+
+      .kontaktdaten {
+          font-size: 15px;
+      }
+
+      .social-contacts {
+          font-size: 40px;
+          margin-top: 30px;
+      }
+
+      .social-contacts li {
+          margin-right: 50px;
+      }
+
+
+      .impressum {
+        font-size: 20px;
+        margin-top: 45px;
+        margin-bottom: 20px;
+      }
+
+      .impressum li{
+          display: inline;
+          margin-right: 90px;
+      }
+
+      .copyright {
+          right: 2%;
+          bottom: 25px;
+      }
+
+}
+
+@media (min-width:961px)  { 
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .header_nav_toggle2 {
+        margin-top: 30px;
+    }
+
+    #el2 {
+        font-size: 50px;
+    }
+
+    #el3, #el4 {
+        width: 300px;
+    }
+
+    #el1 {
+        width: 300px;
+    }
+
+    #beschreibung {
+        font-size: 50px;
+    }
+
+    .iphone-devices-kontakt {
+        font-size: 50px;
+        border-width: 5px;
+    }
+
+    #logo {
+        margin-top: 60px;
+    }
+
+
+
+
+
+
+
+    .footer {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background: #f2f2f2;
+    }
+    
+    .kontakt-us {
+        position: relative;
+        margin-left: 40px;
+        margin-top: 40px;
+        font-size: 2vw; 
+    }
+    
+    .kontakt-us h5{
+        font-weight: 300;
+    }
+    
+    .kontaktdaten {
+        position: relative;
+        margin-left: 40px;
+        margin-top: 40px;
+        color: #9d9c9c;
+        font-size: 1.5vw;
+    }
+    
+    .kontaktdaten li {
+        margin-top: 5px;
+    }
+    
+    .projektanfrage {
+        position: absolute;
+        left: 50%;
+        top: 45px;
+        font-size: 2vw;
+        margin-right: 40px;
+    }
+    
+    .projektanfrage h5{
+        font-weight: 300;
+    }
+    
+    .social-contacts {
+        position: absolute;
+        left: 50%;
+        top: 125px;
+        color: #9d9c9c;
+        font-size: 2vw;
+        list-style: none;
+    
+    }
+    
+    .social-contacts a {
+        text-decoration: none;
+        cursor: none;
+        color: #9d9c9c;
+    }
+    
+    .social-contacts li {
+        display: inline;
+        margin-right: 30px;
+        font-weight: 200;
+    }
+    
+    .copyright {
+        position: absolute;
+        bottom: 10%;
+        left: 2px;
+        font-size: 1.5vw;
+        font-weight: 300;
+        color: #9d9c9c;
+    }
+    
+    .impressum {
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        color: #9d9c9c;
+        font-size: 1.5vw;
+        list-style: none;
+    
+    }
+    
+    .impressum a {
+        text-decoration: none;
+        cursor: none;
+        color: #9d9c9c;
+    }
+    
+    .impressum li {
+        display: inline;
+        margin-right: 30px;
+        font-weight: 300;
+    }
+
+    .projektanfrage-mobile {
+        display: none;
+    }
+
+    .projektanfrage {
+        top: 40px;
+        display: block;
+    }
+
+}
+
+@media (min-width:1024px) {
+    
+    .logo {
+        top: 40px;
+        font-size: 40px;
+    }
+
+    .über-uns, .projekte {
+        font-size: 25px;
+        bottom: 40px;
+    }
+
+    #el1, #el3, #el4 {
+        width: 300px;
+    }
+
+    #el2 {
+        font-size: 50px;
+        left: 20%;
+        right: 20%;
+    }
+
+
+
+    #logo {
+        font-size: 110px;
+        margin-top: 100px;
+    }
+
+    #beschreibung {
+        margin-top: 100px;
+        font-size: 60px;
+        width: 900px;
+    }
+
+    .iphone-devices-kontakt {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+
+
+
+    .landing-page3 {
+        height: 1700px;
+    }
+
+
+    #beschreibung2 {
+      position: absolute;
+      font-size: 85px;
+      font-weight: 400;
+      margin-top: 400px;
+      margin-left: 8%;
+      width: 60%;
+      z-index: 10;
+      }
+
+      .social {
+          z-index: 10;
+          font-size: 50px;
+      }
+
+      #el6 {
+          top: 20%;
+      }
+
+      #el7 {
+          top: 10%;
+      }
+
+      #el8 {
+          top: 50%;
+      }
+
+      #el6, #el7, #el8 {
+          width: 35%;
+      }
+
+      .iphone-devices-kontakt2 {
+          position: absolute;
+          font-size: 50px;
+          bottom: 5%;
+          left: 4%;
+          border-style: solid;
+          border-width: 5px;
+          display: table;
+      }
+
+      .iphone-devices-kontakt2 a {
+          text-decoration: none;
+          color: #000000;
+      }
+
+      .iphone-devices-kontakt2 p {
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 3px;
+          padding-bottom: 3px; 
+      }
+
+      .header_nav_toggle1 {
+          display: none;
+      }
+
+      .kontaktdaten {
+          margin-left: 4%;
+      }
+
+      .kontaktdaten {
+        position: relative;
+        margin-left: 40px;
+        margin-top: 40px;
+        color: #9d9c9c;
+        font-size: 1.5vw;
+    }
+    
+    .kontaktdaten li {
+        margin-top: 5px;
+    }
+    
+    .projektanfrage {
+        position: absolute;
+        left: 50%;
+        top: 45px;
+        font-size: 2vw;
+        margin-right: 40px;
+    }
+    
+    .projektanfrage h5{
+        font-weight: 300;
+    }
+    
+    .social-contacts {
+        position: absolute;
+        left: 50%;
+        top: 125px;
+        color: #9d9c9c;
+        font-size: 2vw;
+        list-style: none;
+    
+    }
+    
+    .social-contacts a {
+        text-decoration: none;
+        cursor: none;
+        color: #9d9c9c;
+    }
+    
+    .social-contacts li {
+        display: inline;
+        margin-right: 30px;
+        font-weight: 200;
+    }
+    
+    .copyright {
+        position: absolute;
+        bottom: 10%;
+        left: 30px;
+        font-size: 1.5vw;
+        font-weight: 300;
+        color: #9d9c9c;
+    }
+    
+    .impressum {
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        color: #9d9c9c;
+        font-size: 1.5vw;
+        list-style: none;
+    
+    }
+    
+    .impressum a {
+        text-decoration: none;
+        cursor: none;
+        color: #9d9c9c;
+    }
+    
+    .impressum li {
+        display: inline;
+        margin-right: 30px;
+        font-weight: 300;
+    }
+
+    .projektanfrage-mobile {
+        display: none;
+    }
+
+    .projektanfrage {
+        top: 40px;
+        display: block;
+    }
+
+}
+
+
+@media (min-width:1281px) {
+    .logo {
+        font-size: 40px;
+    }
+
+    .über-uns, .projekte {
+        font-size: 30px;
+    }
+
+    #el1, #el3, #el4 {
+        width: 300px;
+    }
+
+    #el3 {
+        top: 40%;
+    }
+
+    #el2 {
+        font-size: 4vw;
+        left: 20%;
+        right: 20%;
+    }
+
+    #beschreibung {
+        margin-top: 100px;
+        font-size: 70px;
+        width: 1250px;
+    }
+
+    .landing-page3 {
+        height: 2000px;
+    }
+
+    #beschreibung2 {
+        width: 900px;
+    }
+
+    .footer {
+        height: 400px;
+    }
+
+
+
+}
+
+
+
